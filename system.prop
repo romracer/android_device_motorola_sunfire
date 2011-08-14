@@ -1,0 +1,4 @@
+#
+# system.prop for olympus
+#
+persist.factory.allow_adb=1
