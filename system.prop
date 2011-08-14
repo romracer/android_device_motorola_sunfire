@@ -1,4 +1,4 @@
 #
-# system.prop for olympus
+# system.prop for sunfire
 #
 persist.factory.allow_adb=1

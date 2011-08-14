@@ -10,4 +10,4 @@ ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
 #	$(transform-prebuilt-to-target)
 
 # include the non-open-source counterpart to this file
--include vendor/motorola/olympus/AndroidBoardVendor.mk
+-include vendor/motorola/sunfire/AndroidBoardVendor.mk

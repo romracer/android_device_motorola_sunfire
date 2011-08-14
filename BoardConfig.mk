@@ -2,14 +2,14 @@ USE_CAMERA_STUB := true
 BOARD_USES_GENERIC_AUDIO := false
 
 # inherit from the proprietary version
--include vendor/motorola/olympus/BoardConfigVendor.mk
+-include vendor/motorola/sunfire/BoardConfigVendor.mk
 
 TARGET_NO_BOOTLOADER := true
 TARGET_BOARD_PLATFORM := tegra
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_ARCH_VARIANT := armv7-a
-TARGET_BOOTLOADER_BOARD_NAME := olympus
+TARGET_BOOTLOADER_BOARD_NAME := sunfire
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := vfpv3-d16
 TARGET_CPU_SMP := true
@@ -28,7 +28,7 @@ endif
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_PAGE_SIZE := 0x00000800
 
-BOARD_CUSTOM_GRAPHICS := ../../../device/motorola/olympus/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/motorola/sunfire/recovery/graphics.c
 
 # fix this up by examining /proc/mtd on a running device
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x00800000
@@ -37,7 +37,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 0x14000000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 0x80000000
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_PREBUILT_KERNEL := device/motorola/olympus/kernel
+TARGET_PREBUILT_KERNEL := device/motorola/sunfire/kernel
 TARGET_NO_BOOT := false
 TARGET_NO_RECOVERY := false
 
