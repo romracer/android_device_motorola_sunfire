@@ -124,7 +124,7 @@ TARGET_USE_MOTO_CUSTOM_CAMERA_PARAMETERS := true
 TARGET_SPECIFIC_HEADER_PATH := device/motorola/sunfire/include
 
 #EGL
-BOARD_EGL_CFG := device/motorola/sunfire/egl.cfg
+BOARD_EGL_CFG := device/motorola/sunfire/config/egl.cfg
 
 #USB Tethering
 BOARD_CUSTOM_USB_CONTROLLER := ../../device/motorola/sunfire/UsbController.cpp

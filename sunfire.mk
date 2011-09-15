@@ -24,22 +24,21 @@ $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
 ## (1) First, the most specific values, i.e. the aspects that are specific to CDMA
 PRODUCT_COPY_FILES += \
-    device/motorola/sunfire/init_prep_keypad.sh:root/init_prep_keypad.sh \
     device/motorola/sunfire/init.sunfire.rc:root/init.sunfire.rc \
     device/motorola/sunfire/ueventd.sunfire.rc:root/ueventd.sunfire.rc
 
 ## (2) Also get non-open-source CDMA-specific aspects if available
 $(call inherit-product-if-exists, vendor/motorola/sunfire/sunfire-vendor.mk)
 
-# motorola pds permission fix script
+# motorola helper scripts
 PRODUCT_COPY_FILES += \
-    device/motorola/sunfire/pds_perm_fix.sh:system/bin/pds_perm_fix.sh \
-    device/motorola/sunfire/bt_init_wrapper.sh:system/bin/bt_init_wrapper.sh \
-    device/motorola/sunfire/hciattach_wrapper.sh:system/bin/hciattach_wrapper.sh
+    device/motorola/sunfire/scripts/pds_perm_fix.sh:system/bin/pds_perm_fix.sh \
+    device/motorola/sunfire/scripts/bt_init_wrapper.sh:system/bin/bt_init_wrapper.sh \
+    device/motorola/sunfire/scripts/hciattach_wrapper.sh:system/bin/hciattach_wrapper.sh
 
 # sysctl conf
 PRODUCT_COPY_FILES += \
-    device/motorola/sunfire/sysctl.conf:system/etc/sysctl.conf
+    device/motorola/sunfire/config/sysctl.conf:system/etc/sysctl.conf
 
 ## (3)  Finally, the least specific parts, i.e. the non-CDMA-specific aspects
 
@@ -75,11 +74,11 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/sunfire/overlay
 
 # Board-specific init
 PRODUCT_COPY_FILES += \
-    device/motorola/sunfire/vold.fstab:system/etc/vold.fstab \
+    device/motorola/sunfire/config/vold.fstab:system/etc/vold.fstab \
     device/motorola/sunfire/init.vsnet:system/bin/init.vsnet \
-    device/motorola/sunfire/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
-    device/motorola/sunfire/media_profiles.xml:system/etc/media_profiles.xml \
-    device/motorola/sunfire/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    device/motorola/sunfire/scripts/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
+    device/motorola/sunfire/config/media_profiles.xml:system/etc/media_profiles.xml \
+    device/motorola/sunfire/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 #keyboard files
 PRODUCT_COPY_FILES += \
