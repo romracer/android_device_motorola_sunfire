@@ -8,6 +8,6 @@
 /pds		ext3	/dev/block/mmcblk0p3
 /system		ext3	/dev/block/mmcblk0p12
 /preinstall	ext3	/dev/block/mmcblk0p17
+/emmc		vfat	/dev/block/mmcblk0p18
 /sd-ext		ext3	/dev/block/mmcblk1p2
-/sdcard		vfat	/dev/block/mmcblk0p18
-/sdcard-ext	vfat	/dev/block/mmcblk1p1	/dev/block/mmcblk1
+/sdcard		vfat	/dev/block/mmcblk1p1	/dev/block/mmcblk1
