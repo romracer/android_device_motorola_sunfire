@@ -84,7 +84,7 @@ BOARD_SDCARD_DEVICE_SECONDARY := /dev/block/mmcblk1
 BOARD_VOLD_MAX_PARTITIONS := 18
 
 BOARD_SDEXT_DEVICE := /dev/block/mmcblk1p2
-BOARD_UMS_LUNFILE := /sys/devices/platform/usb_mass_storage/lun0/file
+BOARD_UMS_LUNFILE := /sys/devices/platform/usb_mass_storage/lun1/file
 BOARD_HIJACK_BOOT_PATH := /preinstall/
 BOARD_HIJACK_EXECUTABLES := logwrapper
 BOARD_HIJACK_LOG_ENABLE := false
