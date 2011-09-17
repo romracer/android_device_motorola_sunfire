@@ -44,6 +44,7 @@ TARGET_HAVE_TEGRA_ERRATA_657451 := true
 BOARD_CUSTOM_GRAPHICS := ../../../device/motorola/sunfire/recovery/graphics.c
 BOARD_CUSTOM_RECOVERY_KEYMAPPING:= ../../device/motorola/sunfire/recovery/recovery_ui.c
 BOARD_HAS_SDCARD_INTERNAL := true
+BOARD_HAS_INTERNAL_PARTITIONS := true
 
 BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
