@@ -55,7 +55,7 @@ ro.product.use_charge_counter=1
 ro.opengles.version = 131072
 
 # Forbid format of these partitions in mount menu :
-ro.cwm.forbid_format=/misc,/radio,/pds,/bootloader,/recovery,/efs
+ro.cwm.forbid_format=/misc,/radio,/pds,/bootloader,/boot,/recovery,/efs
 
 # Battery light while charging, enabled by default
 ro.battery_light=true
