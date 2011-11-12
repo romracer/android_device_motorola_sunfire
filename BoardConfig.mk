@@ -60,19 +60,19 @@ BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_HAS_JANKY_BACKBUFFER := true
 TARGET_PREBUILT_KERNEL := device/motorola/sunfire/kernel
 BOARD_MKE2FS := device/motorola/sunfire/utilities/mke2fs
-#TARGET_USERIMAGES_USE_EXT4 := true
+TARGET_USERIMAGES_USE_EXT4 := true
 # Below is a sample of how you can tweak the mount points using the board config.
 BOARD_HAS_NO_MISC_PARTITION := true
 BOARD_RECOVERY_IGNORE_BOOTABLES := true
 BOARD_DATA_DEVICE := /dev/block/mmcblk0p16
-BOARD_DATA_FILESYSTEM := ext3
-BOARD_DATA_FILESYSTEM_OPTIONS := nosuid,nodev,relatime,data=ordered
+BOARD_DATA_FILESYSTEM := ext4
+BOARD_DATA_FILESYSTEM_OPTIONS := nosuid,nodev,relatime,barrier=1,noauto_da_alloc
 BOARD_SYSTEM_DEVICE := /dev/block/mmcblk0p12
-BOARD_SYSTEM_FILESYSTEM_OPTIONS := noatime,nodiratime,data=ordered
-BOARD_SYSTEM_FILESYSTEM := ext3
+BOARD_SYSTEM_FILESYSTEM_OPTIONS := noatime,nodiratime,barrier=1,noauto_da_alloc
+BOARD_SYSTEM_FILESYSTEM := ext4
 BOARD_CACHE_DEVICE := /dev/block/mmcblk0p15
-BOARD_CACHE_FILESYSTEM := ext3
-BOARD_CACHE_FILESYSTEM_OPTIONS := nosuid,nodev,relatime,data=ordered
+BOARD_CACHE_FILESYSTEM := ext4
+BOARD_CACHE_FILESYSTEM_OPTIONS := nosuid,nodev,relatime,barrier=1,noauto_da_alloc
 BOARD_HIJACK_RECOVERY_PATH := /preinstall/
 BOARD_HAS_PREINSTALL := true
 TARGET_NO_BOOT := false
