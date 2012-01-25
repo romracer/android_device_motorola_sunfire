@@ -76,7 +76,6 @@ DEVICE_PACKAGE_OVERLAYS += device/motorola/sunfire/overlay
 # Board-specific init
 PRODUCT_COPY_FILES += \
     device/motorola/sunfire/config/vold.fstab:system/etc/vold.fstab \
-    device/motorola/sunfire/init.vsnet:system/bin/init.vsnet \
     device/motorola/sunfire/scripts/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh \
     device/motorola/sunfire/config/media_profiles.xml:system/etc/media_profiles.xml \
     device/motorola/sunfire/config/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
