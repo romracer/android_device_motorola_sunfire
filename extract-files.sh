@@ -242,5 +242,7 @@ wget "${BASEURL}battd" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/bin/battd
 wget "${BASEURL}libbattd.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libbattd.so
 wget "${BASEURL}libnmea.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libnmea.so
 wget "${BASEURL}gps.sunfire.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/hw/gps.sunfire.so
+wget "${BASEURL}libmoto_ril.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libmoto_ril.so
+wget "${BASEURL}libnvdispmgr_d.so" -O ../../../vendor/$VENDOR/$DEVICE/proprietary/lib/libnvdispmgr_d.so
 
 ./setup-makefiles.sh
