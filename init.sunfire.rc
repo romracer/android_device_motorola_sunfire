@@ -159,6 +159,11 @@ on boot
     # sdcard tweaks
     write /sys/block/mmcblk1/bdi/read_ahead_kb 4096
 
+    # enable ksm
+    write /sys/kernel/mm/ksm/sleep_millisecs 1400
+    write /sys/kernel/mm/ksm/pages_to_scan 200
+    write /sys/kernel/mm/ksm/run 1
+
     # create the necessary dirs for tpapi with proper permission
     mkdir /data/tpapi
     mkdir /data/tpapi/etc
