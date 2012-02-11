@@ -33,8 +33,7 @@ $(call inherit-product-if-exists, vendor/motorola/sunfire/sunfire-vendor.mk)
 # motorola helper scripts
 PRODUCT_COPY_FILES += \
     device/motorola/sunfire/scripts/pds_perm_fix.sh:system/bin/pds_perm_fix.sh \
-    device/motorola/sunfire/scripts/bt_init_wrapper.sh:system/bin/bt_init_wrapper.sh \
-    device/motorola/sunfire/scripts/hciattach_wrapper.sh:system/bin/hciattach_wrapper.sh
+    device/motorola/olympus/scripts/bt_init_wrapper.sh:system/bin/bt_init_wrapper.sh
 
 # sysctl conf
 PRODUCT_COPY_FILES += \
@@ -69,7 +68,9 @@ $(call inherit-product, build/target/product/full_base.mk)
 
 PRODUCT_PACKAGES += Usb \
 			DockAudio \
-			Torch
+			Torch \
+			hcitool \
+			hciconfig
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/sunfire/overlay
 
