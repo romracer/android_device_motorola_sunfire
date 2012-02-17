@@ -68,6 +68,7 @@ $(call inherit-product, build/target/product/full_base.mk)
 
 PRODUCT_PACKAGES += Usb \
 			DockAudio \
+			OlympusParts \
 			Torch \
 			hcitool \
 			hciconfig
