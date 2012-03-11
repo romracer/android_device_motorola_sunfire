@@ -79,3 +79,7 @@ ro.product.locale.region=US
 
 # Enable detailed GC data and SMP dexopt
 dalvik.vm.dexopt-flags=m=y,u=n
+
+# Fingerprint
+ro.authentec.fingerprint.jar=/system/framework/am2app.jar
+ro.authentec.fingerprint.so=/system/lib/libam2app.so

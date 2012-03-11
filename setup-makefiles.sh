@@ -44,7 +44,10 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/lib/libam2server.so:system/lib/libam2server.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/bin/am2server:system/bin/am2server \\
     vendor/__VENDOR__/__DEVICE__/proprietary/app/GfxEngine.apk:system/app/GfxEngine.apk \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/app/FingerprintSensor.apk:system/app/FingerprintSensor.apk \\
     vendor/__VENDOR__/__DEVICE__/proprietary/etc/am2server.pubkey:system/etc/am2server.pubkey \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/etc/tsm.xml:system/etc/tsm.xml \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/app/am2app.jar:system/framework/am2app.jar
 
 # HAL
 PRODUCT_COPY_FILES += \\
