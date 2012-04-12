@@ -71,7 +71,8 @@ PRODUCT_PACKAGES += Usb \
 			OlympusParts \
 			Torch \
 			hcitool \
-			hciconfig
+			hciconfig \
+			screencap
 
 DEVICE_PACKAGE_OVERLAYS += device/motorola/sunfire/overlay
 
