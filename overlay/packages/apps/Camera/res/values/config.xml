@@ -26,4 +26,7 @@
 	<bool name="ffc_canFocus">false</bool>
 	<bool name="ffc_canZoom">false</bool>
 	<string name="ffc_supportedEffects">none</string>
+
+	<!-- Disable camcorder autofocus at start, breaks second video recording -->
+	<bool name="focusCamcorderAtStart">false</bool>
 </resources>
